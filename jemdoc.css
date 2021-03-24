@@ -23,9 +23,11 @@ table#tlayout {
 	border-collapse: separate;
 	background: white;
 	text-align: center;
-	/* margin-left: auto;
-	margin-right: auto;*/
+	margin-left: auto;
+	margin-right: auto;
 	min-height: 700px;
+	max-width: 1300px;
+
 }
 
 body {
@@ -34,7 +36,6 @@ body {
 }
 
 #layout-menu {
-	background: antiquewhite;
 	border: none;
 	padding-top: 4em;
 	padding-left: 25px;
@@ -42,7 +43,7 @@ body {
 	font-size: 17px;
 	width: auto;
 	white-space: nowrap;
-	text-align: left;
+	text-align: right;
 	vertical-align: top;
 	line-height: 1.6em;
 }
@@ -100,15 +101,16 @@ a:hover {
 div.menu-category {
 	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
-	padding-top: 0.2em;
-	padding-bottom: 0.1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.4em;
 	font-weight: bold;
-	font-size: 19px;
+	font-size: 20px;
 }
 
 div.menu-item {
 	padding-left: 20px;
 	text-indent: -5px;
+	line-height: 1.6;
 }
 
 div#toptitle {
@@ -142,14 +144,15 @@ h1, h2, h3 {
 	color: #527bbd;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
-	padding-bottom: 0.2em;
+	padding-bottom: 0.5em;
 	line-height: 1.2;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid #ccc;
 }
 
 h1 {
 	font-size: 165%;
+	padding-bottom: 0.8em;
 }
 
 h2 {
