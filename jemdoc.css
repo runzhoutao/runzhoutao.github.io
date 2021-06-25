@@ -78,10 +78,13 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #265eb9;
 	text-decoration: none;
 }
 
+a.coauthor {
+	color: black;
+}
 a:hover {
 	border-bottom: 1px gray dotted;
 }
@@ -141,18 +144,18 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #000;
 	margin-top: 0.7em;
-	margin-bottom: 0.3em;
-	padding-bottom: 0.5em;
+	margin-bottom: 0.4em;
+	padding-bottom: 0.1em;
 	line-height: 1.2;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #999;
 }
 
 h1 {
 	font-size: 165%;
-	padding-bottom: 0.8em;
+	padding-bottom: 0.6em;
 }
 
 h2 {
