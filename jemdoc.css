@@ -45,7 +45,7 @@ body {
 	white-space: nowrap;
 	text-align: right;
 	vertical-align: top;
-	line-height: 1.6em;
+	line-height: 1.7em;
 }
 
 #layout-menu td {
@@ -176,7 +176,7 @@ p {
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
 	padding: 0;
-	line-height: 1.5;
+	line-height: 1.6;
 	font-size: 15px;
 }
 
@@ -400,4 +400,9 @@ i {
 table.imgtable, table.imgtable td {
 	border: none;
 	text-align: left;
+}
+
+li {
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
 }
