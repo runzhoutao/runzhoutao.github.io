@@ -18,6 +18,18 @@
 
 /* main */
 
+.box {
+    border: 1px solid #bc6c25;  /* Box border */
+    padding: 15px;           /* Space inside the box */
+    margin: 20px 0;          /* Space outside the box */
+    border-radius: 0px;      /* Rounded corners */
+    background-color: #fefae0; /* Background color */
+}
+
+.inside-box {
+    margin-bottom: 0;
+}
+
 table#tlayout {
 	border: none;
 	border-collapse: separate;
