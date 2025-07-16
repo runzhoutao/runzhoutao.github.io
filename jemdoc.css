@@ -442,23 +442,35 @@ li {
 	/* margin-bottom: 0.6em; */
 }
 
-.tabset .tab-panel {
+.tabset .publication {
 	display: none;
+	margin-bottom: 0.8em;
 }
 
-.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
-.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
-.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
-.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
-.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
-.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+.tabset > input:first-child:checked ~ .publications-list .publication {
+	display: block;
+}
+
+.tabset > input:nth-child(3):checked ~ .publications-list .publication[data-categories*="os"] {
+	display: block;
+}
+
+.tabset > input:nth-child(5):checked ~ .publications-list .publication[data-categories*="pl"] {
+	display: block;
+}
+
+.tabset > input:nth-child(7):checked ~ .publications-list .publication[data-categories*="qc"] {
+	display: block;
+}
+
+.tabset > input:nth-child(9):checked ~ .publications-list .publication[data-categories*="theory"] {
 	display: block;
 }
 
 .tabset>label {
 	/* position: relative;
 	display: inline-block; */
-	padding: 15px 5px 15px;
+	padding: 5px 5px 5px;
 	/* border: 1px solid transparent; */
 	border-bottom: 0;
 	cursor: pointer;
@@ -486,13 +498,15 @@ li {
 	background: #06c;
 }
 
-.tabset>input:checked+label {
-	border-color: #ccc;
-	border-bottom: 1px solid #fff;
-	margin-bottom: -1px;
+.tabset > input:checked + label {
+    background-color: #f0f0f0; /* Light gray background */
+    /* border: 1px solid #cccccc; */
+    border-bottom: none; /* Remove bottom border to blend with content */
+    border-radius: 5px 5px 5px 5px; /* Rounded corners on top */
+    /* position: relative; */
+    top: 1px; /* Adjust position to align with content */
 }
-
-.tab-panel {
+.publications-list {
 	padding: 10px 0;
 	border-top: 1px solid #ccc;
 }
